@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="31,377">
+           time="9,625">
   <properties />
-            <testcase name="GithubSearchTest" time="4,130" classname="epam.com.lab.test.GitHubTest">
+            <testcase name="GithubSearchTest" time="1,726" classname="epam.com.lab.test.GitHubTest">
                 <failure type="junit.framework.ComparisonFailure"
                   message="expected:&lt;...session&gt; but was:&lt;...&gt;"
               >
@@ -50,6 +50,6 @@
           </testcase>
   
   
-            <testcase name="GithubSearchTest" time="27,247" classname="epam.com.lab.test.GitHubTest" />
+            <testcase name="GithubSearchTest" time="7,899" classname="epam.com.lab.test.GitHubTest" />
       
 </testsuite>

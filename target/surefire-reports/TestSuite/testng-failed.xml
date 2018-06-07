@@ -17,4 +17,15 @@
       </class> <!-- epam.com.lab.test.GitHubTest -->
     </classes>
   </test> <!-- GitHub1(failed) -->
+  <test thread-count="5" verbose="0" name="Gmail(failed)">
+    <classes>
+      <class name="epam.com.lab.test.GmailTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="GmailDeleteLettersTest" invocation-numbers="1"/>
+          <include name="createChromeDriver"/>
+        </methods>
+      </class> <!-- epam.com.lab.test.GmailTest -->
+    </classes>
+  </test> <!-- Gmail(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->
