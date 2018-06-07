@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 101.684 s <<< FAILURE! - in TestSuite
+GithubSearchTest(epam.com.lab.test.GitHubTest)  Time elapsed: 4.145 s  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...session> but was:<...>
+	at epam.com.lab.test.GitHubTest.GithubSearchTest(GitHubTest.java:46)
+

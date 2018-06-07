@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="99818" started-at="2018-06-07T08:51:57Z" finished-at="2018-06-07T08:53:37Z">
+    <groups>
+    </groups>
+    <test name="GitHub1" duration-ms="47028" started-at="2018-06-07T08:51:57Z" finished-at="2018-06-07T08:52:44Z">
+      <class name="epam.com.lab.test.GitHubTest">
+        <test-method status="PASS" signature="createChromeDriver()[pri:0, instance:epam.com.lab.test.GitHubTest@2d8f65a4]" name="createChromeDriver" is-config="true" duration-ms="8457" started-at="2018-06-07T08:51:57Z" finished-at="2018-06-07T08:52:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createChromeDriver -->
+        <test-method status="PASS" signature="GithubSearchTest(java.lang.String, java.lang.String)[pri:0, instance:epam.com.lab.test.GitHubTest@2d8f65a4]" name="GithubSearchTest" duration-ms="27247" started-at="2018-06-07T08:52:06Z" data-provider="git-data" finished-at="2018-06-07T08:52:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[duploduplin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[duplo1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GithubSearchTest -->
+        <test-method status="PASS" signature="closeTab()[pri:0, instance:epam.com.lab.test.GitHubTest@2d8f65a4]" name="closeTab" is-config="true" duration-ms="770" started-at="2018-06-07T08:52:33Z" finished-at="2018-06-07T08:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTab -->
+        <test-method status="PASS" signature="createChromeDriver()[pri:0, instance:epam.com.lab.test.GitHubTest@2d8f65a4]" name="createChromeDriver" is-config="true" duration-ms="5635" started-at="2018-06-07T08:52:34Z" finished-at="2018-06-07T08:52:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createChromeDriver -->
+        <test-method status="FAIL" signature="GithubSearchTest(java.lang.String, java.lang.String)[pri:0, instance:epam.com.lab.test.GitHubTest@2d8f65a4]" name="GithubSearchTest" duration-ms="4130" started-at="2018-06-07T08:52:40Z" data-provider="git-data" finished-at="2018-06-07T08:52:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[failfail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[failfail123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<...session> but was:<...>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<...session> but was:<...>
+at junit.framework.Assert.assertEquals(Assert.java:81)
+at junit.framework.Assert.assertEquals(Assert.java:87)
+at com.epam.lab.github.businesslogic.Login.login(Login.java:25)
+at epam.com.lab.test.GitHubTest.GithubSearchTest(GitHubTest.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GithubSearchTest -->
+        <test-method status="PASS" signature="closeTab()[pri:0, instance:epam.com.lab.test.GitHubTest@2d8f65a4]" name="closeTab" is-config="true" duration-ms="727" started-at="2018-06-07T08:52:44Z" finished-at="2018-06-07T08:52:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTab -->
+      </class> <!-- epam.com.lab.test.GitHubTest -->
+    </test> <!-- GitHub1 -->
+    <test name="Gmail" duration-ms="52730" started-at="2018-06-07T08:52:44Z" finished-at="2018-06-07T08:53:37Z">
+      <class name="epam.com.lab.test.GmailTest">
+        <test-method status="PASS" signature="createChromeDriver()[pri:0, instance:epam.com.lab.test.GmailTest@7d70d1b1]" name="createChromeDriver" is-config="true" duration-ms="5821" started-at="2018-06-07T08:52:45Z" finished-at="2018-06-07T08:52:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createChromeDriver -->
+        <test-method status="PASS" signature="GmailDeleteLettersTest(java.lang.String, java.lang.String)[pri:0, instance:epam.com.lab.test.GmailTest@7d70d1b1]" name="GmailDeleteLettersTest" duration-ms="19851" started-at="2018-06-07T08:52:51Z" data-provider="gmail-data" finished-at="2018-06-07T08:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[duploduplin@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[duplo1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GmailDeleteLettersTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:epam.com.lab.test.GmailTest@7d70d1b1]" name="closeDriver" is-config="true" duration-ms="847" started-at="2018-06-07T08:53:11Z" finished-at="2018-06-07T08:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="createChromeDriver()[pri:0, instance:epam.com.lab.test.GmailTest@7d70d1b1]" name="createChromeDriver" is-config="true" duration-ms="5038" started-at="2018-06-07T08:53:12Z" finished-at="2018-06-07T08:53:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createChromeDriver -->
+        <test-method status="PASS" signature="GmailDeleteLettersTest(java.lang.String, java.lang.String)[pri:0, instance:epam.com.lab.test.GmailTest@7d70d1b1]" name="GmailDeleteLettersTest" duration-ms="19656" started-at="2018-06-07T08:53:17Z" data-provider="gmail-data" finished-at="2018-06-07T08:53:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[duploduplin1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[duplo1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GmailDeleteLettersTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:epam.com.lab.test.GmailTest@7d70d1b1]" name="closeDriver" is-config="true" duration-ms="875" started-at="2018-06-07T08:53:36Z" finished-at="2018-06-07T08:53:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- epam.com.lab.test.GmailTest -->
+    </test> <!-- Gmail -->
+  </suite> <!-- TestSuite -->
+</testng-results>

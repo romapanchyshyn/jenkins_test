@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite" verbose="1">
+    <listeners>
+        <listener class-name="com.epam.lab.reportutils.Listener" />
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="GitHub1">
+        <classes>
+            <class name="epam.com.lab.test.GitHubTest">
+                <methods>
+                    <include name="GithubSearchTest"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+    <test name="Gmail">
+        <classes>
+            <class name="epam.com.lab.test.GmailTest">
+                <methods>
+                    <include name="GmailDeleteLettersTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
